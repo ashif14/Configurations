@@ -1,0 +1,30 @@
+{
+    "mainAddress": "localhost:27017",
+    "oplogFile": "./logs/oplog.timestamp",
+    "noDump": false,
+    "batchSize": -1,
+    "fields": ["name", "productName","category"],  
+    "__fields__": "Fields to included in index",
+
+    "logging": {
+        "type": "file",
+        "filename": "./logs/mongo-connector.log"
+    },
+    "docManagers": [
+        {
+            "docManager": "elastic2_doc_manager",
+            "targetURL": "localhost:9200"
+        }
+    ],
+
+    "namespaces": {
+        "BuyMart.featuredProducts": {
+            "rename": "buymart.featured_products",
+            "includeFields": ["productName"]
+        }, 
+        "BuyMart.bmProduct": {
+            "rename": "buymart.product",
+            "includeFields": ["name", "category"]
+        }
+    }
+}

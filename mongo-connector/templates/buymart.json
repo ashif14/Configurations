@@ -1,0 +1,34 @@
+// {
+//     "template": "new*",
+//     "settings": {
+//         "index" : {
+//             "number_of_shards": 3,
+//             "number_of_replicas": 1
+//         }
+//     },
+//     "namespaces": {
+//         "BuyMart.bmProduct": true
+//     }
+//     // "mappings": {
+//     //     "product": {
+//     //         "properties": {
+//     //             "name": {
+//     //                 "type": "text"
+//     //             }
+//     //         }
+//     //     }
+//     // }
+// }
+
+{
+    "mappings": {
+        "product": {
+            "properties": {
+                "catalog": {
+                    "type": "text",
+                    "analyzer" : "standard"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,2 @@
+2017-10-31T12:30:06.409+0530 I CONTROL  [main] Trying to install Windows service 'MongoSecondaryNode'
+2017-10-31T12:30:06.410+0530 I CONTROL  [main] There is already a service named 'MongoSecondaryNode', sleeping and retrying

@@ -1,0 +1,195 @@
+2017-10-31T12:30:40.130+0530 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2017-10-31T12:30:40.131+0530 I CONTROL  [initandlisten] MongoDB starting : pid=11920 port=27018 dbpath=C:/mongo/db1 64-bit host=MICRO_01_141-07
+2017-10-31T12:30:40.131+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-10-31T12:30:40.131+0530 I CONTROL  [initandlisten] db version v3.4.4
+2017-10-31T12:30:40.131+0530 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-10-31T12:30:40.131+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-10-31T12:30:40.131+0530 I CONTROL  [initandlisten] modules: none
+2017-10-31T12:30:40.132+0530 I CONTROL  [initandlisten] build environment:
+2017-10-31T12:30:40.132+0530 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-10-31T12:30:40.132+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2017-10-31T12:30:40.132+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-10-31T12:30:40.132+0530 I CONTROL  [initandlisten] options: { config: "C:/mongo/db1/config/mongod.conf", net: { bindIp: "localhost", port: 27018 }, replication: { replSetName: "rs0" }, service: true, storage: { dbPath: "C:/mongo/db1", journal: { enabled: true } }, systemLog: { destination: "file", path: "C:/mongo/db1/logs/mongod.log" } }
+2017-10-31T12:30:40.133+0530 I -        [initandlisten] Detected data files in C:/mongo/db1 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-10-31T12:30:40.134+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7679M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-10-31T12:30:40.715+0530 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-10-31T12:30:40.715+0530 I STORAGE  [initandlisten] The size storer reports that the oplog contains 133 records totaling to 12766 bytes
+2017-10-31T12:30:40.715+0530 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-10-31T12:30:40.758+0530 I CONTROL  [initandlisten] 
+2017-10-31T12:30:40.758+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-10-31T12:30:40.758+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-10-31T12:30:40.758+0530 I CONTROL  [initandlisten] 
+2017-10-31T12:30:40.941+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/mongo/db1/diagnostic.data'
+2017-10-31T12:30:40.942+0530 I STORAGE  [initandlisten] Service running
+2017-10-31T12:30:40.943+0530 I NETWORK  [thread1] waiting for connections on port 27018
+2017-10-31T12:30:40.958+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:60311 #1 (1 connection now open)
+2017-10-31T12:30:40.969+0530 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "rs0", version: 2, protocolVersion: 1, members: [ { _id: 1, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('59f30f1dc185273a4bff4c57') } }
+2017-10-31T12:30:40.969+0530 I -        [conn1] end connection 127.0.0.1:60311 (1 connection now open)
+2017-10-31T12:30:40.969+0530 I REPL     [replExecDBWorker-0] This node is localhost:27018 in the config
+2017-10-31T12:30:40.969+0530 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2017-10-31T12:30:40.969+0530 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-10-31T12:30:40.971+0530 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2017-10-31T12:30:40.971+0530 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2017-10-31T12:30:40.971+0530 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2017-10-31T12:30:40.971+0530 I REPL     [rsSync] transition to RECOVERING
+2017-10-31T12:30:40.972+0530 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-10-31T12:30:40.973+0530 I REPL     [rsSync] transition to SECONDARY
+2017-10-31T12:30:41.015+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:60308 #2 (1 connection now open)
+2017-10-31T12:30:41.016+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:60308 conn2: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T12:30:41.297+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:60309 #3 (2 connections now open)
+2017-10-31T12:30:41.297+0530 I NETWORK  [conn3] received client metadata from 127.0.0.1:60309 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.4" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-10-31T12:30:41.972+0530 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27017, took 1000ms (1 connections now open to localhost:27017)
+2017-10-31T12:30:41.973+0530 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state SECONDARY
+2017-10-31T12:30:46.977+0530 I REPL     [rsBackgroundSync] sync source candidate: localhost:27017
+2017-10-31T12:30:46.978+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-10-31T12:30:47.982+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1004ms (1 connections now open to localhost:27017)
+2017-10-31T12:30:47.983+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-10-31T12:30:47.986+0530 I REPL     [replication-0] Choosing new sync source because our current sync source, localhost:27017, has an OpTime ({ ts: Timestamp 1509432936000|1, t: 3 }) which is not ahead of ours ({ ts: Timestamp 1509432936000|1, t: 3 }), it does not have a sync source, and it's not the primary (sync source does not know the primary)
+2017-10-31T12:30:47.986+0530 I REPL     [replication-0] Canceling oplog query due to OplogQueryMetadata. We have to choose a new sync source. Current source: localhost:27017, OpTime { ts: Timestamp 1509432936000|1, t: 3 }, its sync source index:-1
+2017-10-31T12:30:47.986+0530 W REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: InvalidSyncSource: sync source localhost:27017 (config version: 2; last applied optime: { ts: Timestamp 1509432936000|1, t: 3 }; sync source index: -1; primary index: -1) is no longer valid
+2017-10-31T12:30:47.986+0530 I REPL     [rsBackgroundSync] could not find member to sync from
+2017-10-31T12:30:47.987+0530 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27017: InvalidSyncSource: Sync source was cleared. Was localhost:27017
+2017-10-31T12:30:48.984+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1001ms (2 connections now open to localhost:27017)
+2017-10-31T12:30:52.681+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:60319 #4 (3 connections now open)
+2017-10-31T12:30:52.681+0530 I NETWORK  [conn4] received client metadata from 127.0.0.1:60319 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.4" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-10-31T12:30:52.988+0530 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state PRIMARY
+2017-10-31T12:30:52.991+0530 I REPL     [rsBackgroundSync] sync source candidate: localhost:27017
+2017-10-31T12:31:51.678+0530 I -        [conn3] end connection 127.0.0.1:60309 (3 connections now open)
+2017-10-31T13:31:05.289+0530 I -        [conn2] end connection 127.0.0.1:60308 (2 connections now open)
+2017-10-31T13:35:06.647+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52506 #5 (2 connections now open)
+2017-10-31T13:35:06.647+0530 I NETWORK  [conn5] received client metadata from 127.0.0.1:52506 conn5: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T13:35:06.659+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52510 #6 (3 connections now open)
+2017-10-31T13:35:06.659+0530 I NETWORK  [conn6] received client metadata from 127.0.0.1:52510 conn6: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T13:35:06.663+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52511 #7 (4 connections now open)
+2017-10-31T13:35:06.664+0530 I NETWORK  [conn7] received client metadata from 127.0.0.1:52511 conn7: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T13:35:06.664+0530 I -        [conn7] end connection 127.0.0.1:52511 (4 connections now open)
+2017-10-31T13:35:06.665+0530 I -        [conn6] end connection 127.0.0.1:52510 (3 connections now open)
+2017-10-31T13:36:19.820+0530 I -        [conn5] end connection 127.0.0.1:52506 (2 connections now open)
+2017-10-31T13:36:23.158+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52519 #8 (2 connections now open)
+2017-10-31T13:36:23.159+0530 I NETWORK  [conn8] received client metadata from 127.0.0.1:52519 conn8: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T13:36:23.169+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52523 #9 (3 connections now open)
+2017-10-31T13:36:23.170+0530 I NETWORK  [conn9] received client metadata from 127.0.0.1:52523 conn9: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T13:36:23.174+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52524 #10 (4 connections now open)
+2017-10-31T13:36:23.174+0530 I NETWORK  [conn10] received client metadata from 127.0.0.1:52524 conn10: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T13:36:23.175+0530 I -        [conn10] end connection 127.0.0.1:52524 (4 connections now open)
+2017-10-31T13:36:23.175+0530 I -        [conn9] end connection 127.0.0.1:52523 (3 connections now open)
+2017-10-31T14:38:09.475+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-10-31T14:38:10.481+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1006ms (3 connections now open to localhost:27017)
+2017-10-31T14:39:09.476+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-10-31T14:50:19.035+0530 I -        [conn8] end connection 127.0.0.1:52519 (2 connections now open)
+2017-10-31T14:50:22.793+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:58767 #11 (2 connections now open)
+2017-10-31T14:50:22.794+0530 I NETWORK  [conn11] received client metadata from 127.0.0.1:58767 conn11: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T14:50:22.802+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:58771 #12 (3 connections now open)
+2017-10-31T14:50:22.802+0530 I NETWORK  [conn12] received client metadata from 127.0.0.1:58771 conn12: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T14:50:22.804+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:58772 #13 (4 connections now open)
+2017-10-31T14:50:22.804+0530 I NETWORK  [conn13] received client metadata from 127.0.0.1:58772 conn13: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T14:50:22.805+0530 I -        [conn13] end connection 127.0.0.1:58772 (4 connections now open)
+2017-10-31T14:50:22.805+0530 I -        [conn12] end connection 127.0.0.1:58771 (3 connections now open)
+2017-10-31T15:46:21.897+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:64653 #14 (3 connections now open)
+2017-10-31T15:46:21.898+0530 I NETWORK  [conn14] received client metadata from 127.0.0.1:64653 conn14: { driver: { name: "mongo-java-driver", version: "3.4.2" }, os: { type: "Windows", name: "Windows Server 2012 R2", architecture: "amd64", version: "6.3" }, platform: "Java/Oracle Corporation/1.8.0_121-b13" }
+2017-10-31T15:46:22.311+0530 I -        [conn14] end connection 127.0.0.1:64653 (3 connections now open)
+2017-10-31T15:47:05.565+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:64684 #15 (3 connections now open)
+2017-10-31T15:47:05.567+0530 I NETWORK  [conn15] received client metadata from 127.0.0.1:64684 conn15: { driver: { name: "mongo-java-driver", version: "3.4.2" }, os: { type: "Windows", name: "Windows Server 2012 R2", architecture: "amd64", version: "6.3" }, platform: "Java/Oracle Corporation/1.8.0_121-b13" }
+2017-10-31T15:47:05.937+0530 I -        [conn15] end connection 127.0.0.1:64684 (3 connections now open)
+2017-10-31T15:48:16.682+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:64723 #16 (3 connections now open)
+2017-10-31T15:48:16.683+0530 I NETWORK  [conn16] received client metadata from 127.0.0.1:64723 conn16: { driver: { name: "mongo-java-driver", version: "3.4.2" }, os: { type: "Windows", name: "Windows Server 2012 R2", architecture: "amd64", version: "6.3" }, platform: "Java/Oracle Corporation/1.8.0_121-b13" }
+2017-10-31T15:48:17.052+0530 I -        [conn16] end connection 127.0.0.1:64723 (3 connections now open)
+2017-10-31T15:58:45.577+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:64845 #17 (3 connections now open)
+2017-10-31T15:58:45.578+0530 I NETWORK  [conn17] received client metadata from 127.0.0.1:64845 conn17: { driver: { name: "mongo-java-driver", version: "unknown" }, os: { type: "Windows", name: "Windows Server 2012 R2", architecture: "amd64", version: "6.3" }, platform: "Java/Oracle Corporation/1.8.0_141-b15" }
+2017-10-31T15:58:45.945+0530 I -        [conn17] end connection 127.0.0.1:64845 (3 connections now open)
+2017-10-31T16:00:01.799+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:64861 #18 (3 connections now open)
+2017-10-31T16:00:01.800+0530 I NETWORK  [conn18] received client metadata from 127.0.0.1:64861 conn18: { driver: { name: "mongo-java-driver", version: "unknown" }, os: { type: "Windows", name: "Windows Server 2012 R2", architecture: "amd64", version: "6.3" }, platform: "Java/Oracle Corporation/1.8.0_141-b15" }
+2017-10-31T16:00:02.159+0530 I -        [conn18] end connection 127.0.0.1:64861 (3 connections now open)
+2017-10-31T16:00:46.156+0530 I -        [conn11] end connection 127.0.0.1:58767 (2 connections now open)
+2017-10-31T16:02:00.698+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:64915 #19 (2 connections now open)
+2017-10-31T16:02:00.710+0530 I NETWORK  [conn19] received client metadata from 127.0.0.1:64915 conn19: { driver: { name: "mongo-java-driver", version: "unknown" }, os: { type: "Windows", name: "Windows Server 2012 R2", architecture: "amd64", version: "6.3" }, platform: "Java/Oracle Corporation/1.8.0_141-b15" }
+2017-10-31T16:02:01.084+0530 I -        [conn19] end connection 127.0.0.1:64915 (2 connections now open)
+2017-10-31T16:05:37.838+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:64984 #20 (2 connections now open)
+2017-10-31T16:05:37.839+0530 I NETWORK  [conn20] received client metadata from 127.0.0.1:64984 conn20: { driver: { name: "mongo-java-driver", version: "unknown" }, os: { type: "Windows", name: "Windows Server 2012 R2", architecture: "amd64", version: "6.3" }, platform: "Java/Oracle Corporation/1.8.0_141-b15" }
+2017-10-31T16:05:38.201+0530 I -        [conn20] end connection 127.0.0.1:64984 (2 connections now open)
+2017-10-31T16:05:58.075+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:65011 #21 (2 connections now open)
+2017-10-31T16:05:58.077+0530 I NETWORK  [conn21] received client metadata from 127.0.0.1:65011 conn21: { driver: { name: "mongo-java-driver", version: "unknown" }, os: { type: "Windows", name: "Windows Server 2012 R2", architecture: "amd64", version: "6.3" }, platform: "Java/Oracle Corporation/1.8.0_141-b15" }
+2017-10-31T16:05:58.801+0530 I -        [conn21] end connection 127.0.0.1:65011 (2 connections now open)
+2017-10-31T16:08:56.450+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:65061 #22 (2 connections now open)
+2017-10-31T16:08:56.451+0530 I NETWORK  [conn22] received client metadata from 127.0.0.1:65061 conn22: { driver: { name: "mongo-java-driver", version: "unknown" }, os: { type: "Windows", name: "Windows Server 2012 R2", architecture: "amd64", version: "6.3" }, platform: "Java/Oracle Corporation/1.8.0_141-b15" }
+2017-10-31T16:08:57.111+0530 I -        [conn22] end connection 127.0.0.1:65061 (2 connections now open)
+2017-10-31T17:45:21.057+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-10-31T17:45:22.053+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 996ms (3 connections now open to localhost:27017)
+2017-10-31T17:46:21.058+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-10-31T17:57:41.062+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:56747 #23 (2 connections now open)
+2017-10-31T17:57:41.062+0530 I NETWORK  [conn23] received client metadata from 127.0.0.1:56747 conn23: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T17:57:41.076+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:56751 #24 (3 connections now open)
+2017-10-31T17:57:41.076+0530 I NETWORK  [conn24] received client metadata from 127.0.0.1:56751 conn24: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T17:57:41.078+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:56752 #25 (4 connections now open)
+2017-10-31T17:57:41.078+0530 I NETWORK  [conn25] received client metadata from 127.0.0.1:56752 conn25: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T17:57:41.079+0530 I -        [conn25] end connection 127.0.0.1:56752 (4 connections now open)
+2017-10-31T17:57:41.079+0530 I -        [conn24] end connection 127.0.0.1:56751 (3 connections now open)
+2017-10-31T18:13:54.454+0530 I -        [conn23] end connection 127.0.0.1:56747 (2 connections now open)
+2017-10-31T18:13:58.529+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:56984 #26 (2 connections now open)
+2017-10-31T18:13:58.529+0530 I NETWORK  [conn26] received client metadata from 127.0.0.1:56984 conn26: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T18:13:58.540+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:56988 #27 (3 connections now open)
+2017-10-31T18:13:58.541+0530 I NETWORK  [conn27] received client metadata from 127.0.0.1:56988 conn27: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T18:13:58.543+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:56989 #28 (4 connections now open)
+2017-10-31T18:13:58.543+0530 I NETWORK  [conn28] received client metadata from 127.0.0.1:56989 conn28: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T18:13:58.544+0530 I -        [conn28] end connection 127.0.0.1:56989 (4 connections now open)
+2017-10-31T18:13:58.544+0530 I -        [conn27] end connection 127.0.0.1:56988 (3 connections now open)
+2017-10-31T18:33:12.226+0530 I -        [conn26] end connection 127.0.0.1:56984 (2 connections now open)
+2017-10-31T18:34:53.029+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:49688 #29 (2 connections now open)
+2017-10-31T18:34:53.029+0530 I NETWORK  [conn29] received client metadata from 127.0.0.1:49688 conn29: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T18:34:53.040+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:49692 #30 (3 connections now open)
+2017-10-31T18:34:53.040+0530 I NETWORK  [conn30] received client metadata from 127.0.0.1:49692 conn30: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T18:34:53.042+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:49693 #31 (4 connections now open)
+2017-10-31T18:34:53.042+0530 I NETWORK  [conn31] received client metadata from 127.0.0.1:49693 conn31: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-10-31T18:34:53.043+0530 I -        [conn31] end connection 127.0.0.1:49693 (4 connections now open)
+2017-10-31T18:34:53.043+0530 I -        [conn30] end connection 127.0.0.1:49692 (3 connections now open)
+2017-10-31T18:37:35.235+0530 I -        [conn29] end connection 127.0.0.1:49688 (2 connections now open)
+2017-11-01T01:52:34.491+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T01:52:35.497+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1006ms (3 connections now open to localhost:27017)
+2017-11-01T01:53:34.493+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-11-01T02:40:34.823+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T02:40:35.826+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1004ms (3 connections now open to localhost:27017)
+2017-11-01T02:41:34.824+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-11-01T03:05:14.970+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T03:05:15.976+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1006ms (3 connections now open to localhost:27017)
+2017-11-01T03:06:14.970+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-11-01T03:44:25.196+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T03:44:26.202+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1006ms (3 connections now open to localhost:27017)
+2017-11-01T03:45:25.197+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-11-01T04:42:45.565+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T04:42:46.569+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1004ms (3 connections now open to localhost:27017)
+2017-11-01T04:43:45.565+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-11-01T05:01:15.688+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T05:01:16.695+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1007ms (3 connections now open to localhost:27017)
+2017-11-01T05:02:15.689+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-11-01T06:19:26.455+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T06:19:27.460+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1005ms (3 connections now open to localhost:27017)
+2017-11-01T06:20:26.456+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-11-01T07:26:06.927+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T07:26:07.931+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1004ms (3 connections now open to localhost:27017)
+2017-11-01T07:27:06.928+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-11-01T08:12:27.158+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T08:12:28.160+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1002ms (3 connections now open to localhost:27017)
+2017-11-01T08:13:27.159+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-11-01T10:31:03.849+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52899 #32 (2 connections now open)
+2017-11-01T10:31:03.856+0530 I NETWORK  [conn32] received client metadata from 127.0.0.1:52899 conn32: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-11-01T10:31:03.872+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52903 #33 (3 connections now open)
+2017-11-01T10:31:03.872+0530 I NETWORK  [conn33] received client metadata from 127.0.0.1:52903 conn33: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-11-01T10:31:03.890+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52904 #34 (4 connections now open)
+2017-11-01T10:31:03.890+0530 I NETWORK  [conn34] received client metadata from 127.0.0.1:52904 conn34: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-11-01T10:31:03.890+0530 I -        [conn34] end connection 127.0.0.1:52904 (4 connections now open)
+2017-11-01T10:31:03.890+0530 I -        [conn33] end connection 127.0.0.1:52903 (3 connections now open)
+2017-11-01T10:32:37.134+0530 I -        [conn32] end connection 127.0.0.1:52899 (2 connections now open)
+2017-11-01T10:38:28.343+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52941 #35 (2 connections now open)
+2017-11-01T10:38:28.344+0530 I NETWORK  [conn35] received client metadata from 127.0.0.1:52941 conn35: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-11-01T10:38:28.357+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52945 #36 (3 connections now open)
+2017-11-01T10:38:28.357+0530 I NETWORK  [conn36] received client metadata from 127.0.0.1:52945 conn36: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-11-01T10:38:28.359+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:52946 #37 (4 connections now open)
+2017-11-01T10:38:28.359+0530 I NETWORK  [conn37] received client metadata from 127.0.0.1:52946 conn37: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.13.final.0" }
+2017-11-01T10:38:28.360+0530 I -        [conn37] end connection 127.0.0.1:52946 (4 connections now open)
+2017-11-01T10:38:28.360+0530 I -        [conn36] end connection 127.0.0.1:52945 (3 connections now open)
+2017-11-01T10:39:48.687+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T10:39:49.693+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1006ms (3 connections now open to localhost:27017)
+2017-11-01T10:40:48.688+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open
+2017-11-01T10:43:48.713+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-11-01T10:43:49.712+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 999ms (3 connections now open to localhost:27017)
+2017-11-01T10:44:48.714+0530 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27017 because the pool meets constraints; 2 connections to that host remain open

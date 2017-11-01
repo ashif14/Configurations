@@ -1,0 +1,7 @@
+2017-11-01 15:20:28,690 [ALWAYS] mongo_connector.connector:51 - Starting mongo-connector version: 2.5.1
+2017-11-01 15:20:28,690 [ALWAYS] mongo_connector.connector:51 - Python version: 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:42:59) [MSC v.1500 32 bit (Intel)]
+2017-11-01 15:20:28,694 [ALWAYS] mongo_connector.connector:51 - Platform: Windows-2012ServerR2-6.3.9600
+2017-11-01 15:20:28,694 [ALWAYS] mongo_connector.connector:51 - pymongo version: 3.5.1
+2017-11-01 15:20:28,694 [WARNING] mongo_connector.connector:167 - MongoConnector: Can't find C:\ashif\config\mongo-connector\logs\oplog.timestamp, attempting to create an empty progress log
+2017-11-01 15:20:28,707 [ALWAYS] mongo_connector.connector:51 - Source MongoDB version: 3.4.4
+2017-11-01 15:20:28,707 [ALWAYS] mongo_connector.connector:51 - Target DocManager: mongo_connector.doc_managers.elastic2_doc_manager version: 0.3.0

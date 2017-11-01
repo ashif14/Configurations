@@ -1,0 +1,228 @@
+2017-10-27T15:27:44.923+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-10-27T15:27:45.277+0530 I CONTROL  [initandlisten] MongoDB starting : pid=5420 port=27017 dbpath=C:\data\db\ 64-bit host=MICRO_01_141-07
+2017-10-27T15:27:45.277+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-10-27T15:27:45.277+0530 I CONTROL  [initandlisten] db version v3.4.4
+2017-10-27T15:27:45.277+0530 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-10-27T15:27:45.277+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-10-27T15:27:45.278+0530 I CONTROL  [initandlisten] modules: none
+2017-10-27T15:27:45.278+0530 I CONTROL  [initandlisten] build environment:
+2017-10-27T15:27:45.278+0530 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-10-27T15:27:45.278+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2017-10-27T15:27:45.278+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-10-27T15:27:45.278+0530 I CONTROL  [initandlisten] options: { config: "C:/mongo/mongod.yaml", net: { bindIp: "127.0.0.1", port: 27017 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/mongo/logs/mongod.log" } }
+2017-10-27T15:27:45.278+0530 I STORAGE  [initandlisten] exception in initAndListen: 29 Data directory C:\data\db\ not found., terminating
+2017-10-27T15:27:45.278+0530 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2017-10-27T15:27:45.278+0530 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2017-10-27T15:27:45.278+0530 I CONTROL  [initandlisten] now exiting
+2017-10-27T15:27:45.278+0530 I CONTROL  [initandlisten] shutting down with code:100
+2017-10-27T15:30:53.055+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten] MongoDB starting : pid=8748 port=27017 dbpath=C:/mongo/data 64-bit host=MICRO_01_141-07
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten] db version v3.4.4
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten] modules: none
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten] build environment:
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-10-27T15:30:53.411+0530 I CONTROL  [initandlisten] options: { config: "C:/mongo/mongod.yaml", net: { bindIp: "127.0.0.1", port: 27017 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "C:/mongo/data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/mongo/logs/mongod.log" } }
+2017-10-27T15:30:53.415+0530 I -        [initandlisten] Detected data files in C:/mongo/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-10-27T15:30:53.416+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7679M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-10-27T15:30:53.979+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:30:53.979+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-10-27T15:30:53.979+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-10-27T15:30:53.979+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:30:54.400+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/mongo/data/diagnostic.data'
+2017-10-27T15:30:54.402+0530 I NETWORK  [thread1] waiting for connections on port 27017
+2017-10-27T15:31:16.149+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:62403 #1 (1 connection now open)
+2017-10-27T15:31:22.846+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:62404 #2 (2 connections now open)
+2017-10-27T15:31:22.887+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:62405 #3 (3 connections now open)
+2017-10-27T15:31:23.572+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:62406 #4 (4 connections now open)
+2017-10-27T15:31:28.723+0530 I -        [conn3] end connection 127.0.0.1:62405 (4 connections now open)
+2017-10-27T15:31:28.726+0530 I -        [conn2] end connection 127.0.0.1:62404 (3 connections now open)
+2017-10-27T15:31:33.832+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:62407 #5 (3 connections now open)
+2017-10-27T15:31:33.873+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:62408 #6 (4 connections now open)
+2017-10-27T15:31:46.373+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:62409 #7 (5 connections now open)
+2017-10-27T15:32:46.371+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:62425 #8 (6 connections now open)
+2017-10-27T15:39:40.818+0530 I CONTROL  [thread2] Ctrl-C signal
+2017-10-27T15:39:40.818+0530 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2017-10-27T15:39:40.818+0530 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2017-10-27T15:39:40.819+0530 I NETWORK  [consoleTerminate] closing listening socket: 344
+2017-10-27T15:39:40.819+0530 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2017-10-27T15:39:40.819+0530 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2017-10-27T15:39:40.822+0530 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2017-10-27T15:39:40.891+0530 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2017-10-27T15:39:40.891+0530 I CONTROL  [consoleTerminate] now exiting
+2017-10-27T15:39:40.891+0530 I CONTROL  [consoleTerminate] shutting down with code:12
+2017-10-27T15:40:24.033+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten] MongoDB starting : pid=5924 port=27017 dbpath=C:/mongo/data 64-bit host=MICRO_01_141-07
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten] db version v3.4.4
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten] modules: none
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten] build environment:
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-10-27T15:40:24.397+0530 I CONTROL  [initandlisten] options: { config: "C:/mongo/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "C:/mongo/data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/mongo/logs/mongod.log", quiet: true } }
+2017-10-27T15:40:24.399+0530 I -        [initandlisten] Detected data files in C:/mongo/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-10-27T15:40:24.400+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7679M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-10-27T15:40:24.733+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:40:24.733+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-10-27T15:40:24.733+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-10-27T15:40:24.733+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:40:24.923+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/mongo/data/diagnostic.data'
+2017-10-27T15:40:24.925+0530 I NETWORK  [thread1] waiting for connections on port 27017
+2017-10-27T15:43:25.020+0530 I CONTROL  [thread2] Ctrl-C signal
+2017-10-27T15:43:25.020+0530 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2017-10-27T15:43:25.021+0530 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2017-10-27T15:43:25.021+0530 I NETWORK  [consoleTerminate] closing listening socket: 348
+2017-10-27T15:43:25.021+0530 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2017-10-27T15:43:25.021+0530 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2017-10-27T15:43:25.024+0530 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2017-10-27T15:43:25.132+0530 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2017-10-27T15:43:25.133+0530 I CONTROL  [consoleTerminate] now exiting
+2017-10-27T15:43:25.133+0530 I CONTROL  [consoleTerminate] shutting down with code:12
+2017-10-27T15:43:25.133+0530 I CONTROL  [initandlisten] shutting down with code:12
+2017-10-27T15:43:42.233+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-10-27T15:43:42.585+0530 I CONTROL  [initandlisten] MongoDB starting : pid=9064 port=27017 dbpath=C:/mongo/data 64-bit host=MICRO_01_141-07
+2017-10-27T15:43:42.586+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-10-27T15:43:42.586+0530 I CONTROL  [initandlisten] db version v3.4.4
+2017-10-27T15:43:42.586+0530 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-10-27T15:43:42.586+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-10-27T15:43:42.586+0530 I CONTROL  [initandlisten] modules: none
+2017-10-27T15:43:42.586+0530 I CONTROL  [initandlisten] build environment:
+2017-10-27T15:43:42.586+0530 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-10-27T15:43:42.586+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2017-10-27T15:43:42.586+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-10-27T15:43:42.586+0530 I CONTROL  [initandlisten] options: { config: "C:/mongo/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "C:/mongo/data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/mongo/logs/mongod.log", quiet: true } }
+2017-10-27T15:43:42.590+0530 I -        [initandlisten] Detected data files in C:/mongo/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-10-27T15:43:42.590+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7679M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-10-27T15:43:42.956+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:43:42.956+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-10-27T15:43:42.956+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-10-27T15:43:42.956+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:43:43.154+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/mongo/data/diagnostic.data'
+2017-10-27T15:43:43.156+0530 I NETWORK  [thread1] waiting for connections on port 27017
+2017-10-27T15:48:41.851+0530 I CONTROL  [thread2] Ctrl-C signal
+2017-10-27T15:48:41.852+0530 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2017-10-27T15:48:41.852+0530 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2017-10-27T15:48:41.852+0530 I NETWORK  [consoleTerminate] closing listening socket: 348
+2017-10-27T15:48:41.852+0530 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2017-10-27T15:48:41.852+0530 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2017-10-27T15:48:41.856+0530 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2017-10-27T15:48:41.934+0530 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2017-10-27T15:48:41.934+0530 I CONTROL  [consoleTerminate] now exiting
+2017-10-27T15:48:41.934+0530 I CONTROL  [consoleTerminate] shutting down with code:12
+2017-10-27T15:48:41.934+05302017-10-27T15:48:58.251+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-10-27T15:48:58.611+0530 I CONTROL  [main] Trying to install Windows service 'MongoDB'
+2017-10-27T15:48:58.612+0530 I CONTROL  [main] Error connecting to the Service Control Manager: Access is denied. (5)
+2017-10-27T15:52:00.054+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-10-27T15:52:00.399+0530 I CONTROL  [main] Trying to install Windows service 'MongoDB'
+2017-10-27T15:53:09.573+0530 I CONTROL  [main] Service 'MongoDB' (MongoDB) installed with command line '"C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --config C:/mongo/mongod.conf --service'
+2017-10-27T15:53:09.574+0530 I CONTROL  [main] Service can be started from the command line with 'net start MongoDB'
+2017-10-27T15:54:15.606+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-10-27T15:54:15.950+0530 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten] MongoDB starting : pid=6480 port=27017 dbpath=C:/mongo/data 64-bit host=MICRO_01_141-07
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten] db version v3.4.4
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten] modules: none
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten] build environment:
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-10-27T15:54:15.951+0530 I CONTROL  [initandlisten] options: { config: "C:/mongo/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, service: true, storage: { dbPath: "C:/mongo/data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/mongo/logs/mongod.log", quiet: true } }
+2017-10-27T15:54:15.953+0530 I -        [initandlisten] Detected data files in C:/mongo/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-10-27T15:54:15.953+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7679M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-10-27T15:54:16.301+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:54:16.301+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-10-27T15:54:16.301+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-10-27T15:54:16.301+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:54:16.479+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/mongo/data/diagnostic.data'
+2017-10-27T15:54:16.480+0530 I STORAGE  [initandlisten] Service running
+2017-10-27T15:54:16.481+0530 I NETWORK  [thread1] waiting for connections on port 27017
+2017-10-27T15:57:45.544+0530 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+2017-10-27T15:57:45.544+0530 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2017-10-27T15:57:45.544+0530 I NETWORK  [serviceShutdown] closing listening socket: 356
+2017-10-27T15:57:45.544+0530 I NETWORK  [serviceShutdown] shutdown: going to flush diaglog...
+2017-10-27T15:57:45.544+0530 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2017-10-27T15:57:45.547+0530 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2017-10-27T15:57:45.626+0530 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2017-10-27T15:57:45.627+0530 I CONTROL  [serviceShutdown] now exiting
+2017-10-27T15:57:51.435+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-10-27T15:57:51.782+0530 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten] MongoDB starting : pid=8952 port=27017 dbpath=C:/mongo/server/data 64-bit host=MICRO_01_141-07
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten] db version v3.4.4
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten] modules: none
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten] build environment:
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-10-27T15:57:51.783+0530 I CONTROL  [initandlisten] options: { config: "C:/mongo/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, service: true, storage: { dbPath: "C:/mongo/server/data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/mongo/logs/mongod.log", quiet: true } }
+2017-10-27T15:57:51.784+0530 W -        [initandlisten] Detected unclean shutdown - C:/mongo/server/data\mongod.lock is not empty.
+2017-10-27T15:57:51.785+0530 I -        [initandlisten] Detected data files in C:/mongo/server/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-10-27T15:57:51.785+0530 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-10-27T15:57:51.785+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7679M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-10-27T15:57:52.047+0530 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-10-27T15:57:52.047+0530 I STORAGE  [initandlisten] The size storer reports that the oplog contains 773 records totaling to 74196 bytes
+2017-10-27T15:57:52.047+0530 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-10-27T15:57:52.067+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:57:52.067+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-10-27T15:57:52.067+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-10-27T15:57:52.067+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:57:52.245+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/mongo/server/data/diagnostic.data'
+2017-10-27T15:57:52.246+0530 I STORAGE  [initandlisten] 
+2017-10-27T15:57:52.246+0530 I STORAGE  [initandlisten] ** WARNING: mongod started without --replSet yet 1 documents are present in local.system.replset
+2017-10-27T15:57:52.246+0530 I STORAGE  [initandlisten] **          Restart with --replSet unless you are doing maintenance and  no other clients are connected.
+2017-10-27T15:57:52.246+0530 I STORAGE  [initandlisten] **          The TTL collection monitor will not start because of this.
+2017-10-27T15:57:52.246+0530 I STORAGE  [initandlisten] **         
+2017-10-27T15:57:52.246+0530 I STORAGE  [initandlisten]  For more info see http://dochub.mongodb.org/core/ttlcollections
+2017-10-27T15:57:52.246+0530 I STORAGE  [initandlisten] 
+2017-10-27T15:57:52.246+0530 I STORAGE  [initandlisten] Service running
+2017-10-27T15:57:52.247+0530 I NETWORK  [thread1] waiting for connections on port 27017
+2017-10-27T15:57:53.013+0530 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2017-10-27T15:58:08.354+0530 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+2017-10-27T15:58:08.354+0530 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2017-10-27T15:58:08.354+0530 I NETWORK  [serviceShutdown] closing listening socket: 356
+2017-10-27T15:58:08.354+0530 I NETWORK  [serviceShutdown] shutdown: going to flush diaglog...
+2017-10-27T15:58:08.355+0530 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2017-10-27T15:58:08.357+0530 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2017-10-27T15:58:08.491+0530 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2017-10-27T15:58:08.491+0530 I CONTROL  [serviceShutdown] now exiting
+2017-10-27T15:58:33.973+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-10-27T15:58:34.318+0530 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten] MongoDB starting : pid=9696 port=27017 dbpath=C:/mongo/data 64-bit host=MICRO_01_141-07
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten] db version v3.4.4
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten] modules: none
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten] build environment:
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-10-27T15:58:34.319+0530 I CONTROL  [initandlisten] options: { config: "C:/mongo/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, service: true, storage: { dbPath: "C:/mongo/data", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "C:/mongo/logs/mongod.log", quiet: true } }
+2017-10-27T15:58:34.320+0530 I -        [initandlisten] Detected data files in C:/mongo/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-10-27T15:58:34.321+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7679M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-10-27T15:58:34.671+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:58:34.672+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-10-27T15:58:34.672+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-10-27T15:58:34.672+0530 I CONTROL  [initandlisten] 
+2017-10-27T15:58:34.846+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/mongo/data/diagnostic.data'
+2017-10-27T15:58:34.846+0530 I STORAGE  [initandlisten] Service running
+2017-10-27T15:58:34.847+0530 I NETWORK  [thread1] waiting for connections on port 27017
+2017-10-27T16:05:19.317+0530 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+2017-10-27T16:05:19.318+0530 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2017-10-27T16:05:19.318+0530 I NETWORK  [serviceShutdown] closing listening socket: 364
+2017-10-27T16:05:19.318+0530 I NETWORK  [serviceShutdown] shutdown: going to flush diaglog...
+2017-10-27T16:05:19.318+0530 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2017-10-27T16:05:19.320+0530 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2017-10-27T16:05:19.372+0530 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2017-10-27T16:05:19.373+0530 I CONTROL  [serviceShutdown] now exiting

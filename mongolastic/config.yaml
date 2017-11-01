@@ -1,0 +1,16 @@
+misc:
+    dindex:
+        name: BuyMart # Name of the Mongo database
+        as: buymart  # Name of the index to be created
+    ctype:
+        name: bmProduct # Name of the Collection to index
+        as: product  # Name of the type to be created in elasticsearch 
+mongo:
+    host: localhost # self explanatory
+    port: 27017
+    project: "{name: 1, category: 1}"
+    # query: "{'bmProduct.name': true, 'bmProduct.category': true}"
+    # query: "{ 'user.name' : 'kodcu.com'}"
+elastic:
+    host: localhost
+    port: 9300

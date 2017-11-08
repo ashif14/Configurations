@@ -16,14 +16,11 @@ Requirements
     ```
     pip install elastic2_doc_manager
     ```
-
-
-
-Start ElasticSearch
+ 6. Start ElasticSearch
     ```
     C:/elastic_search_directory/elasticsearch
     ```
-Start Mongo-Connector
+7.  Start Mongo-Connector
     ```
     > mongo-connector -c config.json
     ```

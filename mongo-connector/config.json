@@ -3,7 +3,7 @@
     "oplogFile": "./logs/oplog.timestamp",
     "noDump": false,
     "batchSize": -1,
-    "fields": ["name", "productName","category"],  
+    "__fields": ["name", "productName","category"],  
     "__fields__": "Fields to included in index",
 
     "logging": {
@@ -17,8 +17,8 @@
         }
     ],
 
-    "namespaces": {
-        "BuyMart.featuredProducts": {
+    "__namespaces": {
+        "BuyMart.featuredProduct": {
             "rename": "buymart.featured_products",
             "includeFields": ["productName"]
         }, 

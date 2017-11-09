@@ -1,45 +1,7 @@
-2017-11-08 12:32:19,463 [ALWAYS] mongo_connector.connector:51 - Starting mongo-connector version: 2.5.1
-2017-11-08 12:32:19,463 [ALWAYS] mongo_connector.connector:51 - Python version: 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:42:59) [MSC v.1500 32 bit (Intel)]
-2017-11-08 12:32:19,464 [ALWAYS] mongo_connector.connector:51 - Platform: Windows-2012ServerR2-6.3.9600
-2017-11-08 12:32:19,464 [ALWAYS] mongo_connector.connector:51 - pymongo version: 3.5.1
-2017-11-08 12:32:19,466 [WARNING] mongo_connector.connector:167 - MongoConnector: Can't find C:\ashif\Configurations\mongo-connector\logs\oplog.timestamp, attempting to create an empty progress log
-2017-11-08 12:32:19,476 [ALWAYS] mongo_connector.connector:51 - Source MongoDB version: 3.4.4
-2017-11-08 12:32:19,476 [ALWAYS] mongo_connector.connector:51 - Target DocManager: mongo_connector.doc_managers.elastic2_doc_manager version: 0.3.0
-2017-11-08 12:37:11,806 [ERROR] mongo_connector.oplog_manager:320 - Cursor closed due to an exception. Will attempt to reconnect.
-Traceback (most recent call last):
-  File "c:\python27\lib\site-packages\mongo_connector\oplog_manager.py", line 221, in run
-    for n, entry in enumerate(cursor):
-  File "c:\python27\lib\site-packages\pymongo\cursor.py", line 1132, in next
-    if len(self.__data) or self._refresh():
-  File "c:\python27\lib\site-packages\pymongo\cursor.py", line 1075, in _refresh
-    self.__max_await_time_ms))
-  File "c:\python27\lib\site-packages\pymongo\cursor.py", line 892, in __send_message
-    **kwargs)
-  File "c:\python27\lib\site-packages\pymongo\mongo_client.py", line 950, in _send_message_with_response
-    exhaust)
-  File "c:\python27\lib\site-packages\pymongo\mongo_client.py", line 961, in _reset_on_error
-    return func(*args, **kwargs)
-  File "c:\python27\lib\site-packages\pymongo\server.py", line 136, in send_message_with_response
-    response_data = sock_info.receive_message(1, request_id)
-  File "c:\python27\lib\site-packages\pymongo\pool.py", line 510, in receive_message
-    self._raise_connection_failure(error)
-  File "c:\python27\lib\site-packages\pymongo\pool.py", line 608, in _raise_connection_failure
-    _raise_connection_failure(self.address, error)
-  File "c:\python27\lib\site-packages\pymongo\pool.py", line 269, in _raise_connection_failure
-    raise AutoReconnect(msg)
-AutoReconnect: localhost:27017: [Errno 10054] An existing connection was forcibly closed by the remote host
-2017-11-08 16:32:01,911 [ERROR] mongo_connector.util:106 - Fatal Exception
-Traceback (most recent call last):
-  File "c:\python27\lib\site-packages\mongo_connector\util.py", line 104, in wrapped
-    func(*args, **kwargs)
-  File "c:\python27\lib\site-packages\mongo_connector\connector.py", line 404, in run
-    self.write_oplog_progress()
-  File "c:\python27\lib\site-packages\mongo_connector\connector.py", line 246, in write_oplog_progress
-    os.rename(self.oplog_checkpoint, backup_file)
-WindowsError: [Error 32] The process cannot access the file because it is being used by another process
-2017-11-08 17:02:55,793 [ALWAYS] mongo_connector.connector:51 - Starting mongo-connector version: 2.5.1
-2017-11-08 17:02:55,793 [ALWAYS] mongo_connector.connector:51 - Python version: 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:42:59) [MSC v.1500 32 bit (Intel)]
-2017-11-08 17:02:55,796 [ALWAYS] mongo_connector.connector:51 - Platform: Windows-2012ServerR2-6.3.9600
-2017-11-08 17:02:55,796 [ALWAYS] mongo_connector.connector:51 - pymongo version: 3.5.1
-2017-11-08 17:02:55,805 [ALWAYS] mongo_connector.connector:51 - Source MongoDB version: 3.4.4
-2017-11-08 17:02:55,805 [ALWAYS] mongo_connector.connector:51 - Target DocManager: mongo_connector.doc_managers.elastic2_doc_manager version: 0.3.0
+2017-11-09 19:00:24,414 [ALWAYS] mongo_connector.connector:51 - Starting mongo-connector version: 2.5.1
+2017-11-09 19:00:24,414 [ALWAYS] mongo_connector.connector:51 - Python version: 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:42:59) [MSC v.1500 32 bit (Intel)]
+2017-11-09 19:00:24,418 [ALWAYS] mongo_connector.connector:51 - Platform: Windows-2012ServerR2-6.3.9600
+2017-11-09 19:00:24,418 [ALWAYS] mongo_connector.connector:51 - pymongo version: 3.5.1
+2017-11-09 19:00:24,420 [WARNING] mongo_connector.connector:167 - MongoConnector: Can't find C:\ashif\Configurations\mongo-connector\logs\oplog.timestamp, attempting to create an empty progress log
+2017-11-09 19:00:24,440 [ALWAYS] mongo_connector.connector:51 - Source MongoDB version: 3.4.4
+2017-11-09 19:00:24,440 [ALWAYS] mongo_connector.connector:51 - Target DocManager: mongo_connector.doc_managers.elastic2_doc_manager version: 0.3.0

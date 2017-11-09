@@ -13,7 +13,7 @@
     "docManagers": [
         {
             "docManager": "elastic2_doc_manager",
-            "targetURL": "localhost:9200"
+            "targetURL": "192.168.99.100:9200"
         }
     ],
 

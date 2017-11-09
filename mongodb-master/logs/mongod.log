@@ -1,46 +1,41 @@
-2017-11-09T12:13:11.276+0530 I CONTROL  [initandlisten] MongoDB starting : pid=8256 port=27017 dbpath=C:/mongo/db0 64-bit host=MICRO_03_210-02
-2017-11-09T12:13:11.277+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
-2017-11-09T12:13:11.277+0530 I CONTROL  [initandlisten] db version v3.4.4
-2017-11-09T12:13:11.277+0530 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
-2017-11-09T12:13:11.277+0530 I CONTROL  [initandlisten] allocator: tcmalloc
-2017-11-09T12:13:11.278+0530 I CONTROL  [initandlisten] modules: none
-2017-11-09T12:13:11.278+0530 I CONTROL  [initandlisten] build environment:
-2017-11-09T12:13:11.278+0530 I CONTROL  [initandlisten]     distmod: 2008plus
-2017-11-09T12:13:11.278+0530 I CONTROL  [initandlisten]     distarch: x86_64
-2017-11-09T12:13:11.278+0530 I CONTROL  [initandlisten]     target_arch: x86_64
-2017-11-09T12:13:11.279+0530 I CONTROL  [initandlisten] options: { config: "./mongod.conf", net: { bindIp: "localhost", port: 27017 }, replication: { replSetName: "rs0" }, storage: { dbPath: "C:/mongo/db0", journal: { enabled: true } }, systemLog: { destination: "file", path: "./logs/mongod.log" } }
-2017-11-09T12:13:11.287+0530 W -        [initandlisten] Detected unclean shutdown - C:/mongo/db0\mongod.lock is not empty.
-2017-11-09T12:13:11.294+0530 I -        [initandlisten] Detected data files in C:/mongo/db0 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
-2017-11-09T12:13:11.295+0530 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
-2017-11-09T12:13:11.295+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7679M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
-2017-11-09T12:13:12.112+0530 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
-2017-11-09T12:13:12.112+0530 I STORAGE  [initandlisten] The size storer reports that the oplog contains 2582 records totaling to 512375 bytes
-2017-11-09T12:13:12.112+0530 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
-2017-11-09T12:13:12.228+0530 I CONTROL  [initandlisten] 
-2017-11-09T12:13:12.228+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
-2017-11-09T12:13:12.228+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
-2017-11-09T12:13:12.228+0530 I CONTROL  [initandlisten] 
-2017-11-09T12:13:12.703+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/mongo/db0/diagnostic.data'
-2017-11-09T12:13:12.711+0530 I NETWORK  [thread1] waiting for connections on port 27017
-2017-11-09T12:13:12.712+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:60054 #1 (1 connection now open)
-2017-11-09T12:13:12.714+0530 I REPL     [replExecDBWorker-1] New replica set config in use: { _id: "rs0", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5a02a8684257d92937d0443b') } }
-2017-11-09T12:13:12.714+0530 I -        [conn1] end connection 127.0.0.1:60054 (1 connection now open)
-2017-11-09T12:13:12.714+0530 I REPL     [replExecDBWorker-1] This node is localhost:27017 in the config
-2017-11-09T12:13:12.714+0530 I REPL     [replExecDBWorker-1] transition to STARTUP2
-2017-11-09T12:13:12.714+0530 I REPL     [replExecDBWorker-1] Starting replication storage threads
-2017-11-09T12:13:12.719+0530 I REPL     [replExecDBWorker-1] Starting replication fetcher thread
-2017-11-09T12:13:12.720+0530 I REPL     [replExecDBWorker-1] Starting replication applier thread
-2017-11-09T12:13:12.720+0530 I REPL     [replExecDBWorker-1] Starting replication reporter thread
-2017-11-09T12:13:12.720+0530 I REPL     [rsSync] transition to RECOVERING
-2017-11-09T12:13:12.726+0530 I REPL     [rsSync] transition to SECONDARY
-2017-11-09T12:13:12.726+0530 I REPL     [rsSync] conducting a dry run election to see if we could be elected
-2017-11-09T12:13:12.727+0530 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
-2017-11-09T12:13:12.731+0530 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 3
-2017-11-09T12:13:12.731+0530 I REPL     [ReplicationExecutor] transition to PRIMARY
-2017-11-09T12:13:12.731+0530 I REPL     [ReplicationExecutor] Could not access any nodes within timeout when checking for additional ops to apply before finishing transition to primary. Will move forward with becoming primary anyway.
-2017-11-09T12:13:13.027+0530 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
-2017-11-09T12:13:14.728+0530 I REPL     [rsSync] transition to primary complete; database writes are now permitted
-2017-11-09T12:13:39.611+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:60058 #2 (1 connection now open)
-2017-11-09T12:13:39.612+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:60058 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.4" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
-2017-11-09T12:17:02.748+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:60116 #3 (2 connections now open)
-2017-11-09T12:18:29.626+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:60142 #4 (3 connections now open)
+2017-11-09T11:05:16.069+0000 I CONTROL  [initandlisten] MongoDB starting : pid=6832 port=27017 dbpath=C:/mongo/db0 64-bit host=MICRO_03_210-02
+2017-11-09T11:05:16.069+0000 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-11-09T11:05:16.069+0000 I CONTROL  [initandlisten] db version v3.4.4
+2017-11-09T11:05:16.069+0000 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-11-09T11:05:16.069+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-11-09T11:05:16.069+0000 I CONTROL  [initandlisten] modules: none
+2017-11-09T11:05:16.070+0000 I CONTROL  [initandlisten] build environment:
+2017-11-09T11:05:16.070+0000 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-11-09T11:05:16.070+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2017-11-09T11:05:16.070+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-11-09T11:05:16.070+0000 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "localhost", port: 27017 }, replication: { replSetName: "rs0" }, storage: { dbPath: "C:/mongo/db0", journal: { enabled: true } }, systemLog: { destination: "file", path: "./logs/mongod.log" } }
+2017-11-09T11:05:16.093+0000 I -        [initandlisten] Detected data files in C:/mongo/db0 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-11-09T11:05:16.096+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7679M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-11-09T11:05:17.073+0000 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-11-09T11:05:17.094+0000 I STORAGE  [initandlisten] The size storer reports that the oplog contains 3680 records totaling to 617781 bytes
+2017-11-09T11:05:17.094+0000 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-11-09T11:05:17.231+0000 I CONTROL  [initandlisten] 
+2017-11-09T11:05:17.231+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-11-09T11:05:17.231+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-11-09T11:05:17.231+0000 I CONTROL  [initandlisten] 
+2017-11-09T11:05:17.489+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/mongo/db0/diagnostic.data'
+2017-11-09T11:05:17.499+0000 I NETWORK  [thread1] waiting for connections on port 27017
+2017-11-09T11:05:17.500+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:64519 #1 (1 connection now open)
+2017-11-09T11:05:17.506+0000 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "rs0", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5a02a8684257d92937d0443b') } }
+2017-11-09T11:05:17.506+0000 I REPL     [replExecDBWorker-0] This node is localhost:27017 in the config
+2017-11-09T11:05:17.506+0000 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2017-11-09T11:05:17.506+0000 I -        [conn1] end connection 127.0.0.1:64519 (1 connection now open)
+2017-11-09T11:05:17.506+0000 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-11-09T11:05:17.510+0000 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2017-11-09T11:05:17.510+0000 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2017-11-09T11:05:17.511+0000 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2017-11-09T11:05:17.511+0000 I REPL     [rsSync] transition to RECOVERING
+2017-11-09T11:05:17.514+0000 I REPL     [rsSync] transition to SECONDARY
+2017-11-09T11:05:17.514+0000 I REPL     [rsSync] conducting a dry run election to see if we could be elected
+2017-11-09T11:05:17.514+0000 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2017-11-09T11:05:17.517+0000 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 4
+2017-11-09T11:05:17.517+0000 I REPL     [ReplicationExecutor] transition to PRIMARY
+2017-11-09T11:05:17.517+0000 I REPL     [ReplicationExecutor] Could not access any nodes within timeout when checking for additional ops to apply before finishing transition to primary. Will move forward with becoming primary anyway.
+2017-11-09T11:05:19.587+0000 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2017-11-09T11:05:20.528+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:64522 #2 (1 connection now open)
+2017-11-09T11:16:58.827+0000 I NETWORK  [thread1] connection accepted from 127.0.0.1:56388 #3 (2 connections now open)

@@ -2,15 +2,29 @@ version: '2'
 
 services:
   logstash0: 
-    # build: ./node0/
-    image: docker.elastic.co/beats/filebeat:5.6.4
+    build: ./node0/
     container_name: "logstash0"
     ports:
       - "5044:5044"
-  filebeat:
-    build: ./filebeat
-    container_name: "filebeat"
-    # volumes:
-    #   - type: "bind"
-    #     source: /filebeat/filebeat.yml
-    #     target: /usr/share/filebeat/filebeat.yml
+  # filebeat:
+  #   build: ./filebeat
+  #   container_name: "filebeat"
+    volumes:
+      - samplerestmongo_springboot_logs:/logs
+    networks:
+      - elk_net 
+  elasticsearch:
+    image: elasticsearch
+    container_name: elasticsearch_1
+    ports:
+      - 9200:9200
+    networks: 
+      - elk_net
+
+
+volumes:
+  samplerestmongo_springboot_logs:
+    external: true
+# Network configuration
+networks: 
+  elk_net:

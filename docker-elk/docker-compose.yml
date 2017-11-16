@@ -1,31 +1,36 @@
 version: '2'
-services:
 
-  elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:5.6.4
-    container_name: elasticsearch1
-    environment:
-      - cluster.name=docker-cluster
-      - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
-      - "MAX_MAP_COUNT=262144"
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
-    mem_limit: 2g
+services:
+# Filebeat container
+  filebeat:
+    build: ./filebeat
+    container_name: filebeat
     volumes:
-      - esdata:/usr/share/elasticsearch/data
+      - samplerestmongo_springboot_logs:/logs
+    networks:
+      - elk_net
+# Logstash Container
+  logstash0: 
+    build: ./logstash-cluster/node0
+    container_name: "logstash0"
+    ports:
+      - "5044:5044"
+    # volumes:
+    #   - samplerestmongo_springboot_logs:/logs
+    networks:
+      - elk_net 
+# Elasticsearch Container
+  elasticsearch:
+    image: elasticsearch
+    container_name: elasticsearch
     ports:
       - 9200:9200
-      - 9300:9300
-    networks:
-      - esnet
-  logstash:
-    build: ./logstash
+    networks: 
+      - elk_net
+
 volumes:
-  esdata:
-    driver: local
-networks:
-  esnet:
-    driver: bridge
+  samplerestmongo_springboot_logs:
+    external: true
+# Network configuration
+networks: 
+  elk_net:

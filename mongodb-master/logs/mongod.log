@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a42adc26a397e1abaf48db76ad5dc65c88020a79
 2017-11-14T18:37:21.151+0530 I CONTROL  [initandlisten] MongoDB starting : pid=5636 port=27017 dbpath=C:/mongo/db0 64-bit host=MICRO_03_210-02
 2017-11-14T18:37:21.151+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
 2017-11-14T18:37:21.151+0530 I CONTROL  [initandlisten] db version v3.4.4
@@ -87,4 +90,7 @@
 2017-11-14T19:10:53.588+0530 I CONTROL  [consoleTerminate] now exiting
 2017-11-14T19:10:53.588+0530 I CONTROL  [consoleTerminate] shutting down with code:12
 2017-11-14T19:10:53.588+0530 I CONTROL  [initandlisten] shutting down with code:12
+<<<<<<< HEAD
+>>>>>>> a42adc26a397e1abaf48db76ad5dc65c88020a79
+=======
 >>>>>>> a42adc26a397e1abaf48db76ad5dc65c88020a79

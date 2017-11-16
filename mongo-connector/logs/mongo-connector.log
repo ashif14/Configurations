@@ -5849,4 +5849,7 @@ Traceback (most recent call last):
   File "c:\python27\lib\site-packages\mongo_connector\connector.py", line 1302, in main
     time.sleep(3)
 IOError: [Errno 4] Interrupted function call
+<<<<<<< HEAD
+>>>>>>> a42adc26a397e1abaf48db76ad5dc65c88020a79
+=======
 >>>>>>> a42adc26a397e1abaf48db76ad5dc65c88020a79

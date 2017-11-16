@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+  logstash0: 
+    build: ./node0/
+    container_name: "logstash0"
+    ports:
+      - "5044:5044"
+  # filebeat:
+  #   build: ./filebeat
+  #   container_name: "filebeat"
+    volumes:
+      - samplerestmongo_springboot_logs:/logs
+    networks:
+      - elk_net 
+  elasticsearch:
+    image: elasticsearch
+    container_name: elasticsearch_1
+    ports:
+      - 9200:9200
+    networks: 
+      - elk_net
+
+
+volumes:
+  samplerestmongo_springboot_logs:
+    external: true
+# Network configuration
+networks: 
+  elk_net:

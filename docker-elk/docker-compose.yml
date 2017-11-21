@@ -19,7 +19,7 @@ services:
       - "5044:5044"
       - 9600:9600
     volumes:
-      - springbootrestmongo_springboot_logs:/logs
+      - springbootrestmongo_logs:/logs
     networks:
       - elk_net 
 # Elasticsearch Container
@@ -54,7 +54,7 @@ services:
     ports:
       - 5601:5601
 volumes:
-  springbootrestmongo_springboot_logs:
+  springbootrestmongo_logs:
     external: true
   esdata:
 # Network configuration

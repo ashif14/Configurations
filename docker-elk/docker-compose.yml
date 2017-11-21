@@ -7,8 +7,11 @@ services:
   #   container_name: filebeat
   #   volumes:
   #     - samplerestmongo_springboot_logs:/logs
+<<<<<<< HEAD
   #   ports:
   #     - 5045
+=======
+>>>>>>> 1cd01eaba84c69196b4ccbad485c47f14e859051
   #   networks:
   #     - elk_net
 # Logstash Container
@@ -17,25 +20,57 @@ services:
     container_name: logstash0
     ports:
       - "5044:5044"
+<<<<<<< HEAD
     volumes:
       - samplerestmongo_springboot_logs:/logs
+=======
+      - 9600:9600
+    volumes:
+      - springbootrestmongo_springboot_logs:/logs
+>>>>>>> 1cd01eaba84c69196b4ccbad485c47f14e859051
     networks:
       - elk_net 
 # Elasticsearch Container
   elasticsearch:
-    image: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.6.4
     container_name: elasticsearch
+    environment:
+      # - cluster.name=docker-cluster
+      # - bootstrap.memory_lock=true
+      - "discovery.type=single-node"
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m -XX:ParallelGCThreads=1"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    mem_limit: 1g
+    volumes:
+      - esdata1:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
     volumes: 
       - esdata:/usr/share/elasticsearch/data
     networks: 
       - elk_net
-
+  kibana:
+    image: docker.elastic.co/kibana/kibana:5.6.0
+    container_name: kibana
+    # volumes:
+    #   - ./kibana/kibana.yml:/usr/share/kibana/config/kibana.yml
+    networks:
+      - elk_net
+    ports:
+      - 5601:5601
 volumes:
-  samplerestmongo_springboot_logs:
+  springbootrestmongo_springboot_logs:
     external: true
+<<<<<<< HEAD
   esdata:
+=======
+  # esdata:
+  #   external: true
+  esdata1:
+>>>>>>> 1cd01eaba84c69196b4ccbad485c47f14e859051
 # Network configuration
 networks: 
   elk_net:

@@ -2,21 +2,23 @@ version: '2'
 
 services:
 # Filebeat container
-  filebeat:
-    build: ./filebeat
-    container_name: filebeat
-    volumes:
-      - samplerestmongo_springboot_logs:/logs
-    networks:
-      - elk_net
+  # filebeat:
+  #   build: ./filebeat
+  #   container_name: filebeat
+  #   volumes:
+  #     - samplerestmongo_springboot_logs:/logs
+  #   ports:
+  #     - 5045
+  #   networks:
+  #     - elk_net
 # Logstash Container
   logstash0: 
     build: ./logstash-cluster/node0
-    container_name: "logstash0"
+    container_name: logstash0
     ports:
       - "5044:5044"
-    # volumes:
-    #   - samplerestmongo_springboot_logs:/logs
+    volumes:
+      - samplerestmongo_springboot_logs:/logs
     networks:
       - elk_net 
 # Elasticsearch Container
@@ -25,12 +27,15 @@ services:
     container_name: elasticsearch
     ports:
       - 9200:9200
+    volumes: 
+      - esdata:/usr/share/elasticsearch/data
     networks: 
       - elk_net
 
 volumes:
   samplerestmongo_springboot_logs:
     external: true
+  esdata:
 # Network configuration
 networks: 
   elk_net:

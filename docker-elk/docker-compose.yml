@@ -7,11 +7,8 @@ services:
   #   container_name: filebeat
   #   volumes:
   #     - samplerestmongo_springboot_logs:/logs
-<<<<<<< HEAD
   #   ports:
   #     - 5045
-=======
->>>>>>> 1cd01eaba84c69196b4ccbad485c47f14e859051
   #   networks:
   #     - elk_net
 # Logstash Container
@@ -20,14 +17,9 @@ services:
     container_name: logstash0
     ports:
       - "5044:5044"
-<<<<<<< HEAD
-    volumes:
-      - samplerestmongo_springboot_logs:/logs
-=======
       - 9600:9600
     volumes:
       - springbootrestmongo_springboot_logs:/logs
->>>>>>> 1cd01eaba84c69196b4ccbad485c47f14e859051
     networks:
       - elk_net 
 # Elasticsearch Container
@@ -64,13 +56,7 @@ services:
 volumes:
   springbootrestmongo_springboot_logs:
     external: true
-<<<<<<< HEAD
   esdata:
-=======
-  # esdata:
-  #   external: true
-  esdata1:
->>>>>>> 1cd01eaba84c69196b4ccbad485c47f14e859051
 # Network configuration
 networks: 
   elk_net:

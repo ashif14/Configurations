@@ -2,23 +2,6 @@ version: '2'
 
 services:
 # Filebeat container
-<<<<<<< HEAD
-  filebeat:
-    build: ./filebeat
-    # image: docker.elastic.co/beats/filebeat:5.6.4
-    container_name: filebeat
-    volumes:
-      - springbootrestmongo_springboot_logs:/logs
-    networks:
-      - elk_net
-# Logstash Container
-  logstash0: 
-    build: ./logstash-cluster/node0
-    container_name: "logstash0"
-    restart: always
-    depends_on:
-      - filebeat
-=======
   # filebeat:
   #   build: ./filebeat
   #   container_name: filebeat
@@ -32,17 +15,11 @@ services:
   logstash0: 
     build: ./logstash-cluster/node0
     container_name: logstash0
->>>>>>> 2c2f2fc5909ad4a237e37adf4df1ba7e263d79f4
     ports:
       - 5044:5044
       - 9600:9600
-<<<<<<< HEAD
     volumes:
       - springbootrestmongo_logs:/logs
-=======
-    # volumes:
-    #   - springbootrestmongo_springboot_logs:/logs
->>>>>>> f0c08a22d00fb490f369c1b8208bf3533391dd9c
     networks:
       - elk_net 
 # Elasticsearch Container

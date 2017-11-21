@@ -2,28 +2,33 @@ version: '2'
 
 services:
 # Filebeat container
-  # filebeat:
-  #   build: ./filebeat
-  #   container_name: filebeat
-  #   volumes:
-  #     - samplerestmongo_springboot_logs:/logs
-  #   networks:
-  #     - elk_net
+  filebeat:
+    build: ./filebeat
+    # image: docker.elastic.co/beats/filebeat:5.6.4
+    container_name: filebeat
+    volumes:
+      - springbootrestmongo_springboot_logs:/logs
+    networks:
+      - elk_net
 # Logstash Container
   logstash0: 
     build: ./logstash-cluster/node0
     container_name: "logstash0"
+    restart: always
+    depends_on:
+      - filebeat
     ports:
-      - "5044:5044"
+      - 5044:5044
       - 9600:9600
-    volumes:
-      - springbootrestmongo_springboot_logs:/logs
+    # volumes:
+    #   - springbootrestmongo_springboot_logs:/logs
     networks:
       - elk_net 
 # Elasticsearch Container
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:5.6.4
     container_name: elasticsearch
+    restart: always
     environment:
       # - cluster.name=docker-cluster
       # - bootstrap.memory_lock=true
@@ -40,6 +45,7 @@ services:
       - 9200:9200
     networks: 
       - elk_net
+# Kibana Container Configuration
   kibana:
     image: docker.elastic.co/kibana/kibana:5.6.0
     container_name: kibana

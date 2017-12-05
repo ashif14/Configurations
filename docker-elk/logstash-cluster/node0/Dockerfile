@@ -1,8 +1,7 @@
-FROM docker.elastic.co/logstash/logstash:5.6.4
+FROM docker.elastic.co/logstash/logstash:6.0.0
 
-# COPY ./logstash.conf /config/
+# Remove default logstash pipeline file
+RUN rm -f /usr/share/logstash/pipeline/logstash.conf
 
-# /usr/share/logstash/config/logstash.yml
-COPY ./logstash.conf /usr/share/logstash/pipeline/logstash.conf
-
-# CMD ["logstash","-f", "/config/logstash.conf"]
+# Copy pipeline configuration files to image
+ADD pipeline/ /usr/share/logstash/pipeline/

@@ -16,6 +16,7 @@ filebeat.prospectors:
 
 # Each - is a prospector. Most options can be set at the prospector level, so
 # you can use different prospectors for various configurations.
+# Below are the prospector specific configurations.
 
 - type: log
 

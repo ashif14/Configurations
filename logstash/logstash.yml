@@ -22,6 +22,10 @@
 #
 
 config.reload.automatic: true
+
+# X-Pack Setting
+xpack.monitoring.elasticsearch.username: logstash_system
+xpack.monitoring.elasticsearch.password: elastic
 # ------------ Data path ------------------
 #
 # Which directory should be used by logstash and its plugins
@@ -133,7 +137,7 @@ config.reload.automatic: true
 # If using queue.type: persisted, the directory path where the data files will be stored.
 # Default is path.data/queue
 #
-# path.queue:
+# path.queue: C:/elk-stack/logstash-6.0.0/data
 #
 # If using queue.type: persisted, the page data files size. The queue data consists of
 # append-only data files separated into pages. Default is 250mb

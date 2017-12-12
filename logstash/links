@@ -1,2 +1,6 @@
 https://www.elastic.co/guide/en/logstash/current/lookup-enrichment.html
     -   see elasticsearch and jdbc_streaming thing 
+	
+	
+https://fabianlee.org/2017/04/24/elk-using-ruby-in-logstash-filters/
+	-	 CallingApi from ruby filter

@@ -6,11 +6,27 @@
 #
 # Example of two pipelines:
 #
-- pipeline.id: "SystemOut-pipeline"
-  path.config: "../pipelines/pipeline-wcs-multithread.conf"
-  pipeline.workers: 1
-  pipeline.output.workers: 1
-  pipeline.batch.size: 125
+# - pipeline.id: "SystemOut-pipeline"
+#   path.config: "../pipelines/pipeline-wcs-multithread.conf"
+#   pipeline.workers: 1
+#   pipeline.output.workers: 1
+#   pipeline.batch.size: 125
+#   queue.type: persisted
+#   queue.page_capacity: 150mb
+# - pipeline.id: "SystemOut-pipeline-gtx"
+#   path.config: "../pipelines/pipeline-wcs-gtx.conf"
+#   pipeline.workers: 1
+#   # pipeline.output.workers: 1
+#   pipeline.batch.size: 125
+#   queue.type: persisted
+#   queue.page_capacity: 150mb
+- pipeline.id: "SystemOut-pipeline-es"
+  path.config: "../pipelines/pipeline-wcs-es.conf"
+  # pipeline.workers: 1
+  # pipeline.output.workers: 1
+  # pipeline.batch.size: 125
+  # queue.type: persisted
+  # queue.page_capacity: 150mb
 
 # - pipeline.id: "wcs-default"
 #   path.config: "../pipelines/logstash-wcs-log.conf"

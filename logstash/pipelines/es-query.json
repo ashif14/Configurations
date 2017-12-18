@@ -1,0 +1,14 @@
+[
+    {
+        "delete_documents": "/index_name/type/_delete_by_query",
+        "method": "POST",
+        "body": {
+            "query": {
+                "match_all": {}
+            }
+        }
+    },
+    {
+        
+    }
+]

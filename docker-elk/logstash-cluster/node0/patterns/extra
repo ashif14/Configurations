@@ -1,0 +1,2 @@
+# contents of request pattern
+REQ_STATUS [A-Z]+

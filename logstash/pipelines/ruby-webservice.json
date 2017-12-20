@@ -1,0 +1,33 @@
+# call out to REST based echo service
+   ruby {
+     init => "
+       require 'net/http'
+       require 'json'
+     "
+     code => "
+       firstWord = event['msg'].split(' ')[0]
+       uri = URI.parse('http://localhost:9200/' + firstWord)
+       response = Net::HTTP.get_response(uri)
+       if response.code == '200'
+         result = JSON.parse(response.body)
+         returnWord = result['word']
+         event['echo'] = firstWord + ' echoed back as: ' + returnWord
+       else
+         event['echo'] = 'ERROR reaching web service'
+       end
+     "
+   }
+
+   ruby  {
+     init => "
+              require 'redis';
+              require 'json'
+              $rc = Redis.new;
+            "
+
+      code => " v = JSON.parse($rs.lindex('thread-'+event.get('was_threadID'),0))
+                event.set('transaction_id',v['transaction_id'])
+              "
+
+      "
+   }
